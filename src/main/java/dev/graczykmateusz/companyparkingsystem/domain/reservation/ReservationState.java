@@ -1,6 +1,6 @@
 package dev.graczykmateusz.companyparkingsystem.domain.reservation;
 
 public enum ReservationState {
-
-    INCORRECT, VERIFIED
+    
+    NOT_SET, INCORRECT, VERIFIED
 }

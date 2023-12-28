@@ -1,5 +1,6 @@
 package dev.graczykmateusz.companyparkingsystem.domain.valueobjects;
 
-class Week {
-
+public enum JobTitle {
+    
+    BOSS, REGULAR_EMPLOYEE
 }

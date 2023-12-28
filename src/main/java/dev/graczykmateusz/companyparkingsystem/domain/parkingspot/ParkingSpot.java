@@ -1,6 +1,5 @@
 package dev.graczykmateusz.companyparkingsystem.domain.parkingspot;
 
-import dev.graczykmateusz.companyparkingsystem.domain.valueobjects.Capacity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -18,9 +17,9 @@ public class ParkingSpot {
     
     @Embedded
     @AttributeOverride(name = "value", column = @Column(name = "capacity"))
-    private Capacity capacity;
+    private ParkingSpotCapacity capacity;
     
-    public ParkingSpot(ParkingSpotId id, Capacity capacity) {
+    public ParkingSpot(ParkingSpotId id, ParkingSpotCapacity capacity) {
         this.id = id;
         this.capacity = capacity;
     }

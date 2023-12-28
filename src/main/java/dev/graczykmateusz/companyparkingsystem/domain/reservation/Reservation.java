@@ -16,7 +16,9 @@ class Reservation {
     @EmbeddedId
     @AttributeOverride(name = "value", column = @Column(name = "id"))
     private ReservationId id;
-
+    
+    @Embedded
+    @AttributeOverride(name = "value", column = @Column(name = "parking_spot_id"))
     private ParkingSpotId parkingSpotId;
 
     @Embedded

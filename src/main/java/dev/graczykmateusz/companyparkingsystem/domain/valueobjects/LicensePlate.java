@@ -9,4 +9,8 @@ public record LicensePlate(String value) {
             throw new RuntimeException();
         }
     }
+
+    public static LicensePlate of(String value) {
+        return new LicensePlate(value);
+    }
 }

@@ -12,6 +12,6 @@ public class Reservation {
     private ReservationState state;
     
     public void changeState(ReservationState newState) {
-    
+        this.state = newState;
     }
 }

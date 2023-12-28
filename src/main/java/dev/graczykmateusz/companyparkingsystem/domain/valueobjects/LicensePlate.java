@@ -1,16 +1,12 @@
 package dev.graczykmateusz.companyparkingsystem.domain.valueobjects;
 
-import lombok.Value;
+import java.util.Objects;
 
-@Value(staticConstructor = "of")
-public class LicensePlate {
+public record LicensePlate(String value) {
     
-    String value;
-    
-    private LicensePlate(String value) {
-        if (value == null || value.length() < 5 || value.length() > 8) {
+    public LicensePlate {
+        if (Objects.nonNull(value) && (value.length() < 5 || value.length() > 8)) {
             throw new RuntimeException();
         }
-        this.value = value;
     }
 }

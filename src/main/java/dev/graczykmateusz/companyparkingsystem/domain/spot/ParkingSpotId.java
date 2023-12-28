@@ -1,7 +1,6 @@
 package dev.graczykmateusz.companyparkingsystem.domain.spot;
 
-import lombok.Value;
+import java.util.UUID;
 
-@Value(staticConstructor = "of")
-public class ParkingSpotId {
+public record ParkingSpotId(UUID value) {
 }

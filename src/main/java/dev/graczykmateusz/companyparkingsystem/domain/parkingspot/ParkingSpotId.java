@@ -1,4 +1,4 @@
-package dev.graczykmateusz.companyparkingsystem.domain.spot;
+package dev.graczykmateusz.companyparkingsystem.domain.parkingspot;
 
 import java.io.Serializable;
 import java.util.UUID;

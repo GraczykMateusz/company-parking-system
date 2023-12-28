@@ -1,6 +1,6 @@
 package dev.graczykmateusz.companyparkingsystem.domain.reservation;
 
-import dev.graczykmateusz.companyparkingsystem.domain.spot.ParkingSpotId;
+import dev.graczykmateusz.companyparkingsystem.domain.parkingspot.ParkingSpotId;
 import dev.graczykmateusz.companyparkingsystem.domain.valueobjects.LicensePlate;
 import jakarta.persistence.*;
 import lombok.AccessLevel;

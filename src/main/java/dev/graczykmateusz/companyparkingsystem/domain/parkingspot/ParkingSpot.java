@@ -1,4 +1,4 @@
-package dev.graczykmateusz.companyparkingsystem.domain.spot;
+package dev.graczykmateusz.companyparkingsystem.domain.parkingspot;
 
 import dev.graczykmateusz.companyparkingsystem.domain.valueobjects.Capacity;
 import jakarta.persistence.*;

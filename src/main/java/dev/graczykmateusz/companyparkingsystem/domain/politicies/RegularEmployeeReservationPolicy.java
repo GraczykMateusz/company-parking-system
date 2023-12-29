@@ -1,5 +1,6 @@
-package dev.graczykmateusz.companyparkingsystem.domain.reservation;
+package dev.graczykmateusz.companyparkingsystem.domain.politicies;
 
+import dev.graczykmateusz.companyparkingsystem.domain.reservation.Reservation;
 import dev.graczykmateusz.companyparkingsystem.domain.valueobjects.JobTitle;
 import lombok.RequiredArgsConstructor;
 
@@ -8,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.Collection;
 
 @RequiredArgsConstructor
-class RegularEmployeeReservationPolicy implements ReservationPolicy {
+public class RegularEmployeeReservationPolicy implements ReservationPolicy {
     
     private final Clock clock;
     

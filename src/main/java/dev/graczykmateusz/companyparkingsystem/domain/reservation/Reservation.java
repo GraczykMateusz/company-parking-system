@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "reservations")
 @Getter(AccessLevel.PROTECTED)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-class Reservation {
+public class Reservation {
 
     @EmbeddedId
     @AttributeOverride(name = "value", column = @Column(name = "id"))
@@ -32,12 +32,19 @@ class Reservation {
     @Enumerated(EnumType.STRING)
     private ReservationState state;
 
-    Reservation(ReservationId id, ParkingSpotId parkingSpotId, LicensePlate licensePlate,
-                ReservationDate date, ReservationState state) {
+    public Reservation(ReservationId id, ParkingSpotId parkingSpotId, LicensePlate licensePlate, ReservationDate date) {
         this.id = id;
         this.parkingSpotId = parkingSpotId;
         this.licensePlate = licensePlate;
         this.date = date;
-        this.state = state;
+        this.state = ReservationState.NOT_SET;
+    }
+    
+    void markAsVerified() {
+        this.state = ReservationState.VERIFIED;
+    }
+    
+    void markAsIncorrect() {
+        this.state = ReservationState.INCORRECT;
     }
 }

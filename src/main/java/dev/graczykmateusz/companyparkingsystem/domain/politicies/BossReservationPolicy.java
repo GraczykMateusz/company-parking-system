@@ -1,10 +1,11 @@
-package dev.graczykmateusz.companyparkingsystem.domain.reservation;
+package dev.graczykmateusz.companyparkingsystem.domain.politicies;
 
+import dev.graczykmateusz.companyparkingsystem.domain.reservation.Reservation;
 import dev.graczykmateusz.companyparkingsystem.domain.valueobjects.JobTitle;
 
 import java.util.Collection;
 
-class BossReservationPolicy implements ReservationPolicy {
+public class BossReservationPolicy implements ReservationPolicy {
     
     @Override
     public boolean canBeApplied(JobTitle jobTitle) {

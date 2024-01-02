@@ -32,6 +32,10 @@ public class Reservation {
     @Enumerated(EnumType.STRING)
     private ReservationState state;
 
+    @ManyToOne
+    @JoinColumn(name = "reservation_id")
+    private WeeklyReservations weeklyReservations;
+    
     public Reservation(ReservationId id, ParkingSpotId parkingSpotId, LicensePlate licensePlate, ReservationDate date) {
         this.id = id;
         this.parkingSpotId = parkingSpotId;

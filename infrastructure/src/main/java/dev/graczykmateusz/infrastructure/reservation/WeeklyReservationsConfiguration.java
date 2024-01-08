@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 @Configuration(proxyBeanMethods = false)
 class WeeklyReservationsConfiguration {
-
+    
     private final WeeklyReservationsJpaRepository weeklyReservationsJpaRepository;
     
     @Bean

@@ -26,5 +26,15 @@
             <artifactId>domain</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>dev.graczykmateusz</groupId>
+            <artifactId>infrastructure</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 </project>

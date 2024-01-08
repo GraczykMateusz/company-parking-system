@@ -24,7 +24,7 @@ public class WeeklyReservations {
     @OneToMany(mappedBy = "weeklyReservations")
     private Set<Reservation> reservations;
     
-    WeeklyReservations(WeeklyReservationId id, Week week, Set<Reservation> reservations) {
+    public WeeklyReservations(WeeklyReservationId id, Week week, Set<Reservation> reservations) {
         this.id = id;
         this.week = week;
         this.reservations = reservations;

@@ -2,5 +2,5 @@ package dev.graczykmateusz.domain.reservation;
 
 public interface WeeklyReservationsRepository {
     
-    <S extends Reservation> S save(S reservation);
+    <S extends WeeklyReservations> S save(S WeeklyReservations);
 }
